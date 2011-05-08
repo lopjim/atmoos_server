@@ -46,7 +46,7 @@ form {
 
 	label {
 		font-size:1.1em;
-		font-weight:bold;
+		font-weight:normal;
 
 		&.email {
 			color:#9bba36;
@@ -239,6 +239,7 @@ small {
 
 			.share_text {
 				float:right;
+				font-size:0.96em;
 				padding-top:30px;
 			}
 		}
