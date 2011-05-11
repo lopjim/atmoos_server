@@ -10,12 +10,9 @@ gem 'sqlite3'
 # Asset template engines
 gem 'sass'
 gem 'coffee-script'
-#gem 'uglifier'
-gem "therubyracer-heroku", "~>0.8.0"
 gem "uglifier", "~>0.5.0"
 gem 'nokogiri'
 gem 'geocoder'
-
 gem 'jquery-rails'
 
 # Use unicorn as the web server
@@ -28,10 +25,10 @@ gem 'jquery-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :test do
-  # Pretty printed test output
   gem 'turn', :require => false
 end
 
 group :production do
   gem 'pg'
+  gem "therubyracer-heroku", "~> 0.8.1.pre3"
 end
