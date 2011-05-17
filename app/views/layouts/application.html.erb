@@ -2,8 +2,13 @@
 <html>
 <head>
   <title>atmoos - Conoce la atm&oacute;sfera que te rodea</title>
+  <% if Rails.env.production? %>
+  <link href="/assets/application-ce3cc1713c3387d11548691a4051a3ba.css" media="screen" rel="stylesheet" type="text/css">
+  <script src="/assets/application-aa4b0095c6ae78df96368525debbc5cc.js" type="text/javascript"></script>
+  <% else %>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
+  <% end %>
   <%= yield :javascript %>
   <%= csrf_meta_tags %>
 

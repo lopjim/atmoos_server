@@ -1,0 +1,247 @@
+/*
+ * FIXME: Introduce SCSS & Sprockets
+*/
+
+
+
+@font-face {
+  font-family: "Harabara";
+  src: url(/assets/Harabara.ttf) format("truetype");
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+*:focus {
+  outline: 10; }
+
+body {
+  line-height: 1;
+  color: black;
+  background: white; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+/* 
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+  You can use Sass (SCSS) here: http://sass-lang.com/
+*/
+html, body {
+  color: #284512;
+  font-family: "Harabara";
+  letter-spacing: 1px; }
+
+.wrapper {
+  margin: 0 auto;
+  width: 980px; }
+
+a {
+  color: #34410a;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+h1.logo {
+  font-size: 100%;
+  text-indent: -9000px;
+  text-decoration: none; }
+  h1.logo a {
+    background: url(/assets/logo.png) no-repeat;
+    display: block;
+    height: 200px;
+    margin: 0 auto;
+    width: 513px; }
+
+h2 {
+  font-size: 1.5em;
+  text-align: center; }
+
+form {
+  margin: 30px 0 10px 0; }
+  form label {
+    font-size: 1.1em;
+    font-weight: normal; }
+    form label.email {
+      color: #9bba36;
+      display: inline-block;
+      width: 340px; }
+  form input {
+    font-size: 1.1em;
+    padding: 5px 10px; }
+    form input.zip_code {
+      width: 70px; }
+    form input.email {
+      float: right;
+      width: 176px; }
+    form input.submit {
+      background: transparent url(/assets/go.png) no-repeat 0px -4px;
+      border: none;
+      cursor: pointer;
+      height: 60px;
+      padding: 5px 0;
+      text-indent: -9000px;
+      width: 60px; }
+      form input.submit:active {
+        background: transparent url(/assets/go_hover.png) no-repeat 0px -4px; }
+    form input.subscribe {
+      background: transparent url(/assets/subscribe.png) no-repeat 0px 0px;
+      border: none;
+      cursor: pointer;
+      float: right;
+      height: 40px;
+      padding: 5px 0;
+      text-indent: -9000px;
+      width: 150px; }
+      form input.subscribe:active {
+        background: transparent url(/assets/subscribe_hover.png) no-repeat 0px 0px; }
+  form.subscribe {
+    clear: both; }
+
+p.notice {
+  margin: 10px 0 30px 0;
+  text-align: center;
+  background: #BDDC58;
+  padding: 10px;
+  border: 1px solid #284512; }
+
+p.error {
+  margin: 10px 0 30px 0;
+  text-align: center;
+  background: #EDB864;
+  padding: 10px;
+  border: 1px solid #452812; }
+
+small {
+  color: #284512;
+  font-size: 0.7em; }
+
+.clear {
+  clear: both; }
+
+.header {
+  background: #e9f0f9;
+  border-bottom: #ebeaeb 4px solid;
+  height: 210px; }
+
+.footer {
+  background: #e9f0f9;
+  border-top: #ebeaeb 4px solid;
+  height: 80px;
+  padding: 10px; }
+  .footer p {
+    color: #666666;
+    line-height: 22px; }
+  .footer h1.logo {
+    float: right; }
+    .footer h1.logo a {
+      background: url(/assets/logo_footer.png) no-repeat;
+      height: 70px;
+      width: 180px; }
+
+.content {
+  padding: 25px 10px; }
+  .content .devices {
+    padding: 25px 0 10px 0;
+    text-align: center; }
+  .content .box {
+    margin: 0 auto;
+    width: 700px; }
+    .content .box .map {
+      border: #333333 solid 2px;
+      height: 350px; }
+    .content .box .legend {
+      padding: 20px 0;
+      text-align: center; }
+      .content .box .legend span {
+        line-height: 80px;
+        vertical-align: top; }
+      .content .box .legend ul {
+        display: inline; }
+        .content .box .legend ul li {
+          display: inline-block;
+          text-align: center;
+          width: 106px; }
+      .content .box .legend.small {
+        text-align: right; }
+        .content .box .legend.small ul {
+          display: inline; }
+          .content .box .legend.small ul li {
+            font-size: 0.76em;
+            width: 88px; }
+            .content .box .legend.small ul li img {
+              width: 48px; }
+    .content .box .status {
+      color: #9bba36;
+      font-size: 1.2em;
+      line-height: 22px;
+      min-height: 80px;
+      padding: 15px 0 0 105px; }
+      .content .box .status.good {
+        background: url(/assets/legend_good.png) no-repeat 25px 5px; }
+      .content .box .status.regular {
+        background: url(/assets/legend_regular.png) no-repeat 25px 5px; }
+      .content .box .status.bad {
+        background: url(/assets/legend_bad.png) no-repeat 25px 5px; }
+      .content .box .status.off {
+        background: url(/assets/legend_off.png) no-repeat 25px 5px; }
+      .content .box .status span {
+        color: #284512; }
+    .content .box .share {
+      font-size: 1.2em;
+      line-height: 22px;
+      padding: 20px 0; }
+      .content .box .share .share_icons {
+        float: left; }
+      .content .box .share a {
+        display: block;
+        height: 54px;
+        text-indent: -9000px;
+        width: 55px; }
+        .content .box .share a.facebook {
+          background: url(/assets/facebook.png) no-repeat; }
+        .content .box .share a.twitter {
+          background: url(/assets/twitter.png) no-repeat; }
+        .content .box .share a.blog {
+          background: url(/assets/blog.png) no-repeat;
+          display: inline-block; }
+      .content .box .share span.blog {
+        display: inline-block;
+        padding-left: 5px;
+        vertical-align: top;
+        line-height: 52px; }
+      .content .box .share .share_text {
+        float: right;
+        font-size: 0.96em;
+        padding-top: 30px; }
+/* 
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+  You can use Sass (SCSS) here: http://sass-lang.com/
+*/
+/* 
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+  You can use Sass (SCSS) here: http://sass-lang.com/
+*/
