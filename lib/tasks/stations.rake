@@ -11,6 +11,8 @@ namespace :stations do
   end
 end
 
+task "cron" => "stations:load"
+
 def load_stations
   url = "http://www.gobiernodecanarias.org/cmayot/calidadaire/CargaIcaXZona.do"
 
@@ -76,11 +78,15 @@ def save_stations(stations)
       particles = param['valorTexto'] if param['cana'].eql?("10")
       o3        = param['valorTexto'] if param['cana'].eql?("14")
     end
-    station.update_attributes({
-      :so2        => so2 || "No disponible",
-      :no2        => no2 || "No disponible",
-      :particles  => particles || "No disponible",
-      :o3         => o3 || "No disponible"
-    })
+    begin
+      station.update_attributes({
+        :so2        => so2 || "No disponible",
+        :no2        => no2 || "No disponible",
+        :particles  => particles || "No disponible",
+        :o3         => o3 || "No disponible"
+      })
+    rescue
+      next
+    end
   end
 end
