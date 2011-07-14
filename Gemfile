@@ -10,7 +10,7 @@ gem 'sprockets', '2.0.0.beta.10'
 gem 'sass-rails'
 gem 'coffee-script'
 gem 'uglifier'
-gem 'therubyracer'
+gem 'therubyracer', '0.9.3beta1'
 
 gem 'nokogiri'
 gem 'geocoder'
